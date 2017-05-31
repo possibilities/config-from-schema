@@ -1,0 +1,42 @@
+{
+  "name": "config-from-schema",
+  "description": "A tool for building an application object from config files, command line arguments, or environment variables based on an OpenAPI compatible schema definition.",
+  "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/possibilities/config-from-schema",
+    "type": "git"
+  },
+  "author": "Mike Bannister <mikebannister@gmail.com>",
+  "main": "lib/index.js",
+  "files": [
+    "lib/index.js"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf lib && babel src --out-dir lib",
+    "test": "standard",
+    "prepublish": "yarn build",
+    "lint": "standard",
+    "pretest": "standard"
+  },
+  "dependencies": {
+    "ajv": "^5.1.5",
+    "invariant": "^2.2.2",
+    "lodash.omit": "^4.5.0",
+    "lodash.pick": "^4.4.0",
+    "yargs": "^8.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rimraf": "^2.6.1",
+    "standard": "^10.0.2"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-0"
+    ]
+  }
+}
