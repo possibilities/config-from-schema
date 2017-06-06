@@ -35,7 +35,7 @@ const configFromSchema = (namespace, configParams) => {
     .options('config', {
       type: 'string',
       description: 'Path to config file',
-      default: joinPath(process.env.HOME, '.versal', `${namespace}.json`)
+      default: joinPath(process.env.HOME, `.${namespace}.json`)
     })
     .config('config')
 

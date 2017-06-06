@@ -78,10 +78,10 @@ Config schema format is defined in the [OpenAPI Config Extension Specification](
 
    OR via a config file
 
-   cat ~/.versal/sso.json | jq .
+   cat ~/.sso.json | jq .
 
    ```
-   $ cat ~/.versal/foo.json
+   $ cat ~/.foo.json
    {
      "secret": "baz"
    }
@@ -98,7 +98,7 @@ Config schema format is defined in the [OpenAPI Config Extension Specification](
    Options:
      --help    Show help                                                  [boolean]
      --config  Path to config file
-                                 [string] [default: "~/.versal/foo.json"]
+                                 [string] [default: "~/.foo.json"]
      --port    Application port                                     [default: 3000]
      --secret  Secret used for signing session cookies          [string] [required]
    ```
